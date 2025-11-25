@@ -3,16 +3,13 @@ import { Github, Twitter, Linkedin } from "lucide-react";
 
 const footerLinks = {
     services: [
-        { name: "Web Development", href: "/services/web-development" },
-        { name: "App Development", href: "/services/app-development" },
-        { name: "Content Strategy", href: "/services/content-strategy" },
-        { name: "Consulting", href: "/services/consulting" },
+        { name: "Web Development" },
+        { name: "App Development" },
+        { name: "Content Strategy" },
+        { name: "Consulting" },
     ],
     company: [
-        { name: "About Us", href: "/about" },
-        { name: "Careers", href: "/careers" },
-        { name: "Blog", href: "/blog" },
-        { name: "Contact", href: "/contact" },
+        { name: "Contact", href: "mailto:contact@shapiroworks.com" },
     ],
     connect: [
         { name: "Twitter", href: "https://twitter.com", icon: Twitter },
@@ -40,12 +37,9 @@ export function Footer() {
                         <ul className="space-y-2">
                             {footerLinks.services.map((link) => (
                                 <li key={link.name}>
-                                    <Link
-                                        href={link.href}
-                                        className="text-sm text-muted-foreground hover:text-primary transition-colors"
-                                    >
+                                    <span className="text-sm text-muted-foreground">
                                         {link.name}
-                                    </Link>
+                                    </span>
                                 </li>
                             ))}
                         </ul>
