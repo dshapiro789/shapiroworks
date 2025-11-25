@@ -117,9 +117,9 @@ export function ServicesSection() {
                     </div>
 
                     <h2 className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-bold mb-8 leading-tight">
-                        Eight Disciplines of
+                        Eight Domains of
                         <br />
-                        <GradientText>Digital Mastery</GradientText>
+                        <GradientText>Digital Services</GradientText>
                     </h2>
 
                     <p className="text-xl sm:text-2xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
