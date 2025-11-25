@@ -75,8 +75,8 @@ export function ConstellationCanvas() {
 
             // Update and draw particles
             particles.forEach((p, i) => {
-                // Only update physics every N frames
-                if (shouldUpdate) {
+                // Only update physics every N frames AND only on desktop
+                if (shouldUpdate && !isMobile) {
                     // Move
                     p.x += p.vx;
                     p.y += p.vy;
