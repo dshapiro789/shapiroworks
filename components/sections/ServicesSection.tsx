@@ -172,8 +172,8 @@ export function ServicesSection() {
                                         {service.narrative}
                                     </p>
 
-                                    {/* Hover decoration */}
-                                    <div className="absolute bottom-0 left-0 w-full h-1 bg-gradient-to-r from-primary to-accent transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left" />
+                                    {/* Hover decoration - visible by default on mobile */}
+                                    <div className="absolute bottom-0 left-0 w-full h-1 bg-gradient-to-r from-primary to-accent transform scale-x-100 md:scale-x-0 md:group-hover:scale-x-100 transition-transform duration-500 origin-left" />
                                 </GlassCard>
                             </motion.div>
                         );

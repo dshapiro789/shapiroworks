@@ -33,9 +33,10 @@ export function ConstellationCanvas() {
         let frameCount = 0;
         const updateEveryNFrames = 3;
 
-        // Configuration
-        const particleCount = 60;
-        const connectionDistance = 150;
+        // Configuration - Optimize for mobile
+        const isMobile = window.innerWidth < 768;
+        const particleCount = isMobile ? 30 : 60;
+        const connectionDistance = isMobile ? 100 : 150;
         const mouseDistance = 200;
         const colors = [
             "hsla(217, 91%, 60%, 0.8)", // Electric Blue
@@ -171,9 +172,9 @@ export function ConstellationCanvas() {
     }, []);
 
     return (
-        <div ref={containerRef} className="w-full h-[300px] relative overflow-hidden rounded-3xl glass-blue mt-16">
+        <div ref={containerRef} className="w-full h-[200px] sm:h-[300px] relative overflow-hidden rounded-3xl glass-blue mt-16">
             <div className="absolute inset-0 bg-gradient-to-b from-transparent via-primary/5 to-transparent pointer-events-none" />
-            <canvas ref={canvasRef} className="absolute inset-0 w-full h-full" />
+            <canvas ref={canvasRef} className="absolute inset-0 w-full h-full touch-none" />
 
             {/* Overlay Text */}
             <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
