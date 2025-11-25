@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Github, Twitter, Linkedin } from "lucide-react";
+import { Github, Linkedin } from "lucide-react";
 
 const footerLinks = {
     services: [
@@ -12,9 +12,8 @@ const footerLinks = {
         { name: "Contact", href: "mailto:contact@shapiroworks.com" },
     ],
     connect: [
-        { name: "Twitter", href: "https://twitter.com", icon: Twitter },
-        { name: "GitHub", href: "https://github.com", icon: Github },
-        { name: "LinkedIn", href: "https://linkedin.com", icon: Linkedin },
+        { name: "GitHub", href: "https://github.com/dshapiro789/", icon: Github },
+        { name: "LinkedIn", href: "https://www.linkedin.com/in/davidshapiro7/", icon: Linkedin },
     ],
 };
 
