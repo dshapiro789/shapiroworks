@@ -36,7 +36,7 @@ export function HeroSection() {
         <motion.section
             ref={sectionRef}
             style={{ opacity, scale }}
-            className="relative min-h-screen flex items-center justify-center overflow-hidden px-4 sm:px-6 lg:px-8 pt-12 md:pt-20"
+            className="relative min-h-screen flex items-center justify-center overflow-hidden px-4 sm:px-6 lg:px-8 pt-16 md:pt-20"
         >
             {/* Artistic floating elements */}
             <div className="absolute inset-0 overflow-hidden pointer-events-none">
