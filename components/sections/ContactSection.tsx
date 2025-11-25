@@ -5,6 +5,7 @@ import { Send, Mail, PenTool } from "lucide-react";
 import { GlassCard } from "@/components/ui/GlassCard";
 import { GradientText } from "@/components/ui/GradientText";
 import { Button } from "@/components/ui/button";
+import { SuccessModal } from "@/components/ui/SuccessModal";
 import { useState } from "react";
 
 const fadeInUp = {
@@ -22,6 +23,7 @@ export function ContactSection() {
     });
     const [isLoading, setIsLoading] = useState(false);
     const [submitStatus, setSubmitStatus] = useState<'idle' | 'success' | 'error'>('idle');
+    const [showSuccessModal, setShowSuccessModal] = useState(false);
 
     const handleSubmit = async (e: React.FormEvent) => {
         e.preventDefault();
@@ -39,6 +41,7 @@ export function ContactSection() {
 
             if (response.ok) {
                 setSubmitStatus('success');
+                setShowSuccessModal(true);
                 setFormState({ name: "", email: "", service: "", message: "" });
             } else {
                 setSubmitStatus('error');
@@ -193,6 +196,12 @@ export function ContactSection() {
                     </GlassCard>
                 </motion.div>
             </div>
+
+            {/* Success Modal */}
+            <SuccessModal
+                isOpen={showSuccessModal}
+                onClose={() => setShowSuccessModal(false)}
+            />
         </section>
     );
 }
