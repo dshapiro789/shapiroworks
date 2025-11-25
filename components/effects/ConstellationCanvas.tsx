@@ -176,17 +176,6 @@ export function ConstellationCanvas() {
             <div className="absolute inset-0 bg-gradient-to-b from-transparent via-primary/5 to-transparent pointer-events-none" />
             <canvas ref={canvasRef} className="absolute inset-0 w-full h-full touch-none" />
 
-            {/* Overlay Text */}
-            <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
-                <div className="text-center">
-                    <p className="text-sm font-medium tracking-[0.2em] text-primary/80 uppercase mb-2">
-                        System Status
-                    </p>
-                    <p className="text-2xl font-bold text-white/90">
-                        Operational
-                    </p>
-                </div>
-            </div>
         </div>
     );
 }
