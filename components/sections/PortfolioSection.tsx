@@ -92,7 +92,7 @@ export function PortfolioSection() {
                             target="_blank"
                             rel="noopener noreferrer"
                             variants={itemVariants}
-                            className="group block relative pl-8 border-l-2 border-white/10 hover:border-primary transition-colors duration-300"
+                            className="group block relative pl-8 border-l-2 border-primary md:border-white/10 md:hover:border-primary transition-colors duration-300"
                         >
                             <div className="flex flex-col sm:flex-row sm:items-baseline sm:justify-between gap-2">
                                 <h3 className="text-2xl sm:text-3xl font-bold text-foreground group-hover:text-primary transition-colors flex items-center gap-3">
