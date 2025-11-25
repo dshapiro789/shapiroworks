@@ -5,6 +5,7 @@ import { cn } from "@/lib/utils";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { CustomCursor } from "@/components/ui/CustomCursor";
+import { ScrollProgress } from "@/components/ui/ScrollProgress";
 
 const montserrat = Montserrat({
     subsets: ["latin"],
@@ -32,6 +33,7 @@ export default function RootLayout({
     return (
         <html lang="en" suppressHydrationWarning>
             <body className={cn("min-h-screen bg-background font-sans antialiased", montserrat.variable, playfair.variable)}>
+                <ScrollProgress />
                 <Header />
                 <main className="flex-1 pt-20">
                     {children}

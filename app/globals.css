@@ -220,6 +220,14 @@
     @apply bg-background text-foreground;
     font-feature-settings: "rlig" 1, "calt" 1;
     font-family: var(--font-montserrat), sans-serif;
+    position: relative;
+  }
+
+  /* Hide default cursor globally */
+  *,
+  *::before,
+  *::after {
+    cursor: none !important;
   }
 
   h1,
