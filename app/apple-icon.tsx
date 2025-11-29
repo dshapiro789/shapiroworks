@@ -21,7 +21,7 @@ export default function Icon() {
                     display: 'flex',
                     alignItems: 'center',
                     justifyContent: 'center',
-                    color: '#D4AF37', // Gold/Bronze color
+                    color: '#3B82F6', // Electric Blue (Primary)
                     borderRadius: '18%',
                 }}
             >
