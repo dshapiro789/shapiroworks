@@ -18,12 +18,12 @@ const projects = [
     {
         title: "Quality Prompt",
         url: "https://qualityprompt.cv",
-        description: "AI prompt engineering marketplace."
+        description: "AI prompt engineering platform."
     },
     {
         title: "AI Bitcoin Tutor",
         url: "https://aibitcointutor.com",
-        description: "Educational platform for crypto learning."
+        description: "Educational platform for learning Bitcoin."
     },
     {
         title: "Crypto Apparel",
