@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Send, Mail, PenTool } from "lucide-react";
+import { Send, PenTool } from "lucide-react";
 import { GlassCard } from "@/components/ui/GlassCard";
 import { GradientText } from "@/components/ui/GradientText";
 import { Button } from "@/components/ui/button";
@@ -46,7 +46,7 @@ export function ContactSection() {
             } else {
                 setSubmitStatus('error');
             }
-        } catch (error) {
+        } catch (_error) {
             setSubmitStatus('error');
         } finally {
             setIsLoading(false);
@@ -80,7 +80,7 @@ export function ContactSection() {
                         variants={fadeInUp}
                         className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-6"
                     >
-                        Let's Write Your <br />
+                        Let&apos;s Write Your <br />
                         <GradientText>Next Chapter</GradientText>
                     </motion.h2>
 
@@ -89,7 +89,7 @@ export function ContactSection() {
                         className="text-xl text-muted-foreground max-w-2xl mx-auto"
                     >
                         Ready to bring your vision to life? Tell us about your project,
-                        and let's create something extraordinary together.
+                        and let&apos;s create something extraordinary together.
                     </motion.p>
                 </motion.div>
 
@@ -186,7 +186,7 @@ export function ContactSection() {
                                 </Button>
 
                                 {submitStatus === 'success' && (
-                                    <p className="text-sm text-primary">Message sent successfully! We'll be in touch soon.</p>
+                                    <p className="text-sm text-primary">Message sent successfully! We&apos;ll be in touch soon.</p>
                                 )}
                                 {submitStatus === 'error' && (
                                     <p className="text-sm text-destructive">Failed to send message. Please try again.</p>

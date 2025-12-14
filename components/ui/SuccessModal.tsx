@@ -74,7 +74,7 @@ export function SuccessModal({ isOpen, onClose }: SuccessModalProps) {
                                     Message Sent Successfully!
                                 </h3>
                                 <p className="text-muted-foreground mb-6">
-                                    Thank you for reaching out. We've received your message and will get back to you within 24 hours.
+                                    Thank you for reaching out. We&apos;ve received your message and will get back to you within 24 hours.
                                 </p>
 
                                 {/* Decorative line */}

@@ -25,7 +25,7 @@ export function ConstellationCanvas() {
 
         let animationFrameId: number;
         let particles: Particle[] = [];
-        let mouse = { x: -1000, y: -1000 };
+        const mouse = { x: -1000, y: -1000 };
 
         // EDIT HERE: Frame Rate Control
         // Controls how often physics updates occur. Higher = slower animation.

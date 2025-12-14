@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { ExternalLink, ArrowRight } from "lucide-react";
+import { ExternalLink } from "lucide-react";
 import { GradientText } from "@/components/ui/GradientText";
 
 const projects = [
@@ -9,6 +9,11 @@ const projects = [
         title: "Bonsai Web Design",
         url: "https://bonsaiwebdesign.com",
         description: "Premium web design agency portfolio."
+    },
+    {
+        title: "AthleteXperience",
+        url: "https://theathletexperience.com",
+        description: "Feature rich mobile app for athletes (coming soon)."
     },
     {
         title: "Emerald Grove Digital",

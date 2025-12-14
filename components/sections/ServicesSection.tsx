@@ -164,7 +164,7 @@ export function ServicesSection() {
 
                                     {/* Storytelling description */}
                                     <p className="text-sm text-foreground/90 mb-3 italic relative z-10">
-                                        "{service.description}"
+                                        &quot;{service.description}&quot;
                                     </p>
 
                                     {/* Narrative detail */}
@@ -210,7 +210,7 @@ export function ServicesSection() {
 
                             <p className="text-sm text-muted-foreground italic max-w-2xl mx-auto">
                                 Every project is unique. We craft custom packages tailored to your vision,
-                                timeline, and ambitions. Let's discuss how we can bring your story to life.
+                                timeline, and ambitions. Let&apos;s discuss how we can bring your story to life.
                             </p>
                         </div>
                     </GlassCard>
