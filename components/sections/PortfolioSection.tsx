@@ -21,8 +21,8 @@ const projects = [
         description: "Digital growth and marketing solutions."
     },
     {
-        title: "Quality Prompt",
-        url: "https://qualityprompt.cv",
+        title: "UPrompt",
+        url: "https://uprompt.me",
         description: "AI prompt engineering platform."
     },
     {
