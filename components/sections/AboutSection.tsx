@@ -8,10 +8,12 @@ import { GlassCard } from "@/components/ui/GlassCard";
 const teamMembers = [
     {
         name: "David Shapiro",
+        tagline: "B.S. Software Engineering",
         image: "/team/jenna-shapiro.png",
     },
     {
         name: "Jenna Shapiro",
+        tagline: "Editorial Assistant",
         image: "/team/david-shapiro.jpg",
     },
 ];
@@ -127,6 +129,11 @@ export function AboutSection() {
                                 <h3 className="text-2xl sm:text-3xl font-bold text-center group-hover:text-gradient transition-all duration-300">
                                     {member.name}
                                 </h3>
+
+                                {/* Tagline */}
+                                <p className="mt-2 text-sm sm:text-base text-muted-foreground text-center italic tracking-wide">
+                                    {member.tagline}
+                                </p>
 
                                 {/* Hover decoration line */}
                                 <div className="absolute bottom-0 left-0 w-full h-1 bg-gradient-to-r from-primary to-accent transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left" />
