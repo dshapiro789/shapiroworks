@@ -9,12 +9,12 @@ const teamMembers = [
     {
         name: "David Shapiro",
         tagline: "B.S. Software Engineering",
-        image: "/team/jenna-shapiro.png",
+        image: "/team/david-shapiro.jpg",
     },
     {
         name: "Jenna Shapiro",
-        tagline: "Editorial Assistant",
-        image: "/team/david-shapiro.jpg",
+        tagline: "Creative Director",
+        image: "/team/jenna-shapiro.jpg",
     },
 ];
 
