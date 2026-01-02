@@ -4,7 +4,7 @@ import { motion, useScroll, useTransform } from "framer-motion";
 import { ArrowDown, Code, Palette, Sparkles } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { GradientText } from "@/components/ui/GradientText";
-import { ConstellationCanvas } from "@/components/effects/ConstellationCanvas";
+
 import { useRef } from "react";
 
 const fadeInUp = {
@@ -146,20 +146,14 @@ export function HeroSection() {
                     </Button>
                 </motion.div>
 
-                {/* Digital Constellation Animation */}
-                <motion.div
-                    variants={fadeInUp}
-                    className="max-w-5xl mx-auto w-full px-4"
-                >
-                    <ConstellationCanvas />
-                </motion.div>
+
 
                 {/* Scroll indicator */}
                 <motion.div
                     initial={{ opacity: 0, y: -20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ delay: 2, duration: 1 }}
-                    className="absolute bottom-8 left-1/2 -translate-x-1/2"
+                    className="mt-20 flex justify-center"
                 >
                     <motion.div
                         animate={{ y: [0, 10, 0] }}

@@ -71,7 +71,7 @@ export function ContactSection() {
                     <motion.div variants={fadeInUp} className="mb-8">
                         <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass-blue">
                             <span className="text-xs font-medium tracking-widest uppercase text-primary">
-                                Chapter IV: Begin Your Story
+                                Chapter V: Begin Your Story
                             </span>
                         </div>
                     </motion.div>

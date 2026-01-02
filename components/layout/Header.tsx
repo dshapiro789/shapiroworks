@@ -11,6 +11,7 @@ import { Button } from "@/components/ui/button";
 const navItems = [
     { name: "Services", href: "#services" },
     { name: "Portfolio", href: "#portfolio" },
+    { name: "About", href: "#about" },
 ];
 
 export function Header() {
@@ -74,14 +75,13 @@ export function Header() {
                     )}
                 </button>
             </div>
-
             {/* Mobile Navigation */}
             {isMobileMenuOpen && (
                 <motion.div
                     initial={{ opacity: 0, y: -20 }}
                     animate={{ opacity: 1, y: 0 }}
                     exit={{ opacity: 0, y: -20 }}
-                    className="absolute top-full left-0 right-0 glass-strong shadow-lg md:hidden"
+                    className="absolute top-full left-0 right-0 bg-background/95 backdrop-blur-xl border-b border-white/10 shadow-2xl md:hidden"
                 >
                     <nav className="flex flex-col p-4 gap-4">
                         {navItems.map((item) => (
